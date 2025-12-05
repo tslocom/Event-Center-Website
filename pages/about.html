@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../styles.css">
+    <title>About Us</title>
+</head>
+<body>
+    <!--This is the navigation bar-->
+    <div class="nav-bar">
+        <div></div>
+        <div class="logo">
+            Vegas Expo Center
+        </div>
+        <i class="fas fa-bars menu-toggle" onclick="toggleMenu()"></i>
+        <div id="menu" class="menu">
+            <ul class="nav-links">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About Us</a></li>
+                <li><a href="./events.html">Events</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--This is the about section-->
+    <article class="about">
+        <h1>About Vegas Expo Center</h1>
+        <p> The Vegas Expo Center has 4.65 million square feet of meeting space, spanning 74 meeting rooms, the largest of which being a 2.1 million square foot exhibit space. </p>
+        <p> We have a full ballroom, 35 confrence rooms, 24 auditoriums, and 15 exhibit halls. A fully staffed kitchen also takes care of all of our guests catering needs, even taking custom requests. </p>
+        <h2> Our Mission</h2>
+        <p> Our mission at the Vegas Expo Center is to provide a world-class venue for events, conferences, and exhibitions, fostering innovation, collaboration, and memorable experiences for all attendees. </p>
+        <h2> Our History</h2>
+        <img src="../images/old-expo-center.jpg" alt="Historic Expo Center Photo"/>
+        <p> Established in 1915, the Vegas Expo Center started as a modest exhibition hall with just a few rooms, and has since evolved into one of the largest and most versatile event venues in the world. </p>
+        <p> Over the decades, it has hosted countless significant events, from trade shows to international conferences, contributing to Las Vegas's reputation as a premier destination for business and entertainment. </p>
+    </article>
+    <!--This is the footer with copyright-->
+    <footer>
+        <a class="back-to-top" href="./about.html">Back To Top</a>
+        <p>&copy; 2025 Vegas Expo Center. All rights reserved.</p>
+    </footer>
+    <script>
+    function toggleMenu() {
+        const menu = document.getElementById("menu");
+        menu.classList.toggle("active");
+    }
+    </script>
+</body>
+</html>

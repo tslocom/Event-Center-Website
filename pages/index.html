@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../styles.css">
+    <title>Vegas Expo Center</title>
+</head>
+<body>
+    <!--This is an announcement banner at the top of the page-->
+    <div class="banner">
+      <div></div>
+      <div class="announcement">
+        <div class="label">
+          <span>New</span>
+        </div>
+        <p>
+          Omega Conference 2024: Open opportunities and challenges for the
+          global financial industry
+        </p>
+      </div>
+      <button class="close" onclick="this.parentElement.style.display='none';">
+        <img src="../images/close.svg" />
+      </button>
+    </div>
+    <!--This is the navigation bar-->
+    <div class="nav-bar">
+        <div></div>
+        <div class="logo">
+            Vegas Expo Center
+        </div>
+        <i class="fas fa-bars menu-toggle" onclick="toggleMenu()"></i>
+        <div id="menu" class="menu">
+            <ul class="nav-links">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About Us</a></li>
+                <li><a href="./events.html">Events</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--This is the hero section-->
+    <div class="hero">
+        <div class="hero-content">
+            <img src="../images/main-hall.png" alt="Main Hall"/>
+            <h1>Welcome to Vegas Expo Center</h1>
+            <p>Your premier destination for events and conferences in Las Vegas.</p>
+            <a href="./events.html" class="btn">Upcoming Events</a>
+        </div>
+    </div>
+    <!--This is the general info section on the home page-->
+    <div class="info-section">
+        <h2>Why Choose Vegas Expo Center?</h2>
+        <div class="info-cards">
+            <div class="info-card">
+                <h3>State-of-the-Art Facilities</h3>
+                <p>Our center boasts modern amenities and versatile spaces to accommodate events of all sizes.</p>
+            </div>
+            <div class="info-card">
+                <h3>Prime Location</h3>
+                <p>Located in the heart of Las Vegas, we offer easy access to hotels, restaurants, and entertainment.</p>
+            </div>
+            <div class="info-card">
+                <h3>Exceptional Service</h3>
+                <p>Our dedicated team is committed to ensuring your event is a success from start to finish.</p>
+            </div>
+            <div class="info-card">
+                <h3>Flexible Event Packages</h3>
+                <p>Customizable packages and scalable spaces allow you to tailor events to your budget and needs.</p>
+            </div>
+        </div>
+    <!--This is the footer with copyright-->
+    <footer>
+        <a class="back-to-top" href="./index.html">Back To Top</a>
+        <p>&copy; 2025 Vegas Expo Center. All rights reserved.</p>
+        </footer>
+    <script>
+    function toggleMenu() {
+        const menu = document.getElementById("menu");
+        menu.classList.toggle("active");
+    }
+    </script>
+</body>
+</html>
